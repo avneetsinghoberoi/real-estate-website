@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Oberoi Realtors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <<nav class="navbar">
+  <a href="index.html" class="logo">
+  <img src="assets/images/logo_oberoi.png" alt="Oberoi Realtors">
+  </a>
+  
+
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="btn">Contact</a></li>
+  </ul>
+</nav>
+
+</header>
+
+<section class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Let’s discuss your project, property, or collaboration</p>
+</section>
+
+<section class="contact-section">
+  <div class="contact-wrapper">
+
+    <!-- LEFT CARD -->
+    <div class="contact-card contact-info-card">
+      <h2>Get in Touch</h2>
+
+      <p><strong>Oberoi Realtors</strong></p>
+      <p>📍 New Delhi, India</p>
+      <p>📞 +91 8527116141 , +91 9971310381</p>
+      <p>✉️ japneetoberoi02@gmail.com</p>
+
+      <button class="btn whatsapp-btn" onclick="sendWhatsApp()">
+        Chat on WhatsApp
+      </button>
+
+      <!-- MAP INSIDE LEFT CARD -->
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.470743625609!2d77.05996317575753!3d28.645620375657664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0500583a309f%3A0x8d9dcdae00d36f23!2sOberoi%20Realtors!5e0!3m2!1sen!2sin!4v1766513201484!5m2!1sen!2sin"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="contact-card contact-form-card">
+      <h2>Send an Enquiry</h2>
+
+      <form id="contactForm" class="custom-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="message" rows="5" placeholder="Tell us about your requirement"></textarea>
+        <button type="submit" class="btn">Submit Enquiry</button>
+        <p id="formStatus"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  <p>© 2025 Oberoi Realtors. All Rights Reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
