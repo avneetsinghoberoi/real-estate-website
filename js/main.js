@@ -29,3 +29,9 @@ form.addEventListener("submit", async (e) => {
     statusText.textContent = "Error submitting form.";
   }
 });
+function sendWhatsApp() {
+  const phoneNumber = "919971310381"; // use country code, no +
+  const message = "Hello! I’d like to know more about your services.";
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
