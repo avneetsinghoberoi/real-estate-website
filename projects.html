@@ -12,25 +12,23 @@
 
 <header>
   <nav class="navbar">
-  <a href="index.html" class="logo">
-  <img src="assets/images/logo_oberoi.png" alt="Oberoi Realtors">
-  </a>
-  
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo_oberoi.png" alt="Oberoi Realtors">
+    </a>
 
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="btn">Contact</a></li>
-  </ul>
-</nav>
-
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="btn">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
+<!-- HERO -->
 <section class="page-hero">
   <h1>Our Projects</h1>
   <p>Landmarks built with precision, trust, and quality</p>
@@ -41,21 +39,21 @@
   <h2>Ongoing Projects</h2>
 
   <div class="project-grid">
-    <div class="project-card">
-      <img src="assets/images/project1.jpg" alt="Ongoing Project">
-      <div class="project-info">
-        <h3>Residential Development</h3>
-        <p>Modern apartment project currently under construction.</p>
-      </div>
-    </div>
 
-    <div class="project-card">
-      <img src="assets/images/project2.jpg" alt="Ongoing Project">
-      <div class="project-info">
-        <h3>Client Plot Construction</h3>
-        <p>Independent home construction for a private client.</p>
+    <!-- Project 1 -->
+    <a href="project-residential.html" class="project-link">
+      <div class="project-card">
+        <img src="assets/images/project_94.png" alt="Residential Development">
+        <div class="project-info">
+          <h3>Residential Development</h3>
+          <p>Modern apartment project currently under construction.</p>
+        </div>
       </div>
-    </div>
+    </a>
+
+    <!-- Project 2 -->
+    
+
   </div>
 </section>
 
@@ -64,31 +62,28 @@
   <h2>Completed Projects</h2>
 
   <div class="project-grid">
-    <div class="project-card">
-      <img src="assets/images/project_oberoi.jpg" alt="Completed Project">
-      <div class="project-info">
-        <h3>Luxury Residential Building</h3>
-        <p>Successfully delivered premium residential project.</p>
-      </div>
-    </div>
 
-    <div class="project-card">
-      <img src="assets/images/project4.jpg" alt="Completed Project">
-      <div class="project-info">
-        <h3>Joint Venture Project</h3>
-        <p>Collaborative development with landowner partners.</p>
+    <!-- Project 3 -->
+    <a href="project-luxury.html" class="project-link">
+      <div class="project-card">
+        <img src="assets/images/project_oberoi.jpeg" alt="Luxury Residential Building">
+        <div class="project-info">
+          <h3>Luxury Residential Building</h3>
+          <p>Successfully delivered premium residential project.</p>
+        </div>
       </div>
-    </div>
+    </a>
+
   </div>
 </section>
 
+<!-- CTA -->
 <section class="cta">
   <h2>Interested in Working With Us?</h2>
   <div class="cta-actions">
     <a href="contact.html" class="btn">Start a Conversation</a>
   </div>
 </section>
-
 
 <footer>
   <p>© 2025 Oberoi Realtors. All Rights Reserved.</p>
@@ -97,3 +92,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+

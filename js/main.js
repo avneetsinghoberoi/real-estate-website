@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".nav-links");
+  if (nav) nav.classList.remove("active");
+});
 function toggleMenu() {
   document.querySelector(".nav-links")
     .classList.toggle("active");
